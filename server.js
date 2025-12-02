@@ -12,7 +12,7 @@ app.use(express.json());
 // Use an environment variable to override broker, otherwise local MQTT on 1883.
 // Example to run with remote broker:
 //   MQTT_BROKER_URL='mqtt://14.139.122.114:1883' node server.js
-const MQTT_BROKER_URL = process.env.MQTT_BROKER_URL || 'mqtt://127.0.0.1:1884';
+const MQTT_BROKER_URL = process.env.MQTT_BROKER_URL || 'mqtt://10.41.232.58:1884';
 const PORT = process.env.PORT || 3000;
 
 // Topics your ESP32 or other sensors may publish to
